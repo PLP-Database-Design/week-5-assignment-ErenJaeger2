@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Providers Data</title>
+  </head>
+  <body>
+    <h1>List of Provider's Specialty</h1>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Specialty</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% results.forEach(provider => { %>
+        <tr>
+          <td><%= provider.provider_specialty %></td>
+        </tr>
+        <% }); %>
+      </tbody>
+    </table>
+  </body>
+</html>
